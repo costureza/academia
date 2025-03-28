@@ -195,9 +195,14 @@ footer{
     width: 90%;
     height: 7vh;
     text-align: center;
-    display: inline-block;
+    display: inline-block;   
+    font-size: 2rem; 
+    }
+footer a{  
+    color: green;
+    text-decoration: none;
     }
 
 .consti{
-    width: 200px;
-}
+        width: 200px;
+    }
