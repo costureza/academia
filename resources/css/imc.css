@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;  
+    box-sizing: border-box; 
+}
+
+html{
+    width: 100vw;
+    height: 100vw;
+    font-size: 62.5%;
+    color: white;
+    font-family: "Quicksand", serif;
+
+}
+body{
+    background: linear-gradient(rgba(17,17,17,0.8), rgba(20,20,20,1)), url(../../public/img/fundo.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+}
+header{
+    width: 100%;
+    height: 7vh;
+    background-color: rgba(22,22,22,0.2);
+}
+.menu-content{
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+
+}
+.logoimg{
+    width: 100px;
+    cursor: pointer;
+}
+.menu-content .list-itens{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+.menu-content .list-itens a{
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+.menu-content .list-itens a:before{
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: green;
+    transition: all 1.5s ease-in;
+
+}
+.menu-content .list-itens, a:hover:before{
+    width: 100%;
+}
+.socialmedia{
+    width: 20px;
+}
+
+.primary-text{
+    font-family: "Sigmar", serif;    
+    width: 850px;
+    font-size: 5rem;
+    margin: 2rem;
+    text-align: center;    
+    text-shadow:  0.1em 0.1em 0.1em green;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;    
+    
+}
+.second-text{
+    font-family: "Quicksand", serif;
+    margin-bottom: 7rem;
+    font-size: 2rem;
+    text-align: center;
+    
+}
+main{
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 20px;   
+    
+}
+.btns {
+    width: 100%;
+    height: 80px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+}
+.btns:before{
+    content: ' ';
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background-color: rgb(61,61,61);
+    z-index: -1;
+    transition: 1s;
+
+}
+.btns:hover{
+    color: green;
+}
+.btns:hover::before{
+    width: 100%;
+}
+fieldset{
+    border: 3px solid green;
+}
+
+legend{
+    border: 1px solid green;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 128, 0, 0.253);    
+    border-radius: 8px;
+}
+.cslc{
+    font-family: "Sigmar", serif; 
+    font-size: 4em;
+}
+.inputbox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid green; 
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    height: 80px;
+    letter-spacing: 2px;
+}
+.labelinput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+    color: white;
+}
+.inputUser:focus ~ .labelinput.inputUser:valid ~ .labelinput{
+    top: -20px;
+    font-size: 12px;
+    color: white;
+}
+
+p{
+    font-size: 4em;
+    text-align: center;
+}
+strong{
+    color: green;
+}
+footer{
+    background-color: rgba(22,22,22,0.2);
+    bottom: 0;
+    position: fixed;
+    width: 90%;
+    height: 7vh;
+    text-align: center;
+    display: inline-block;
+    }
+
+.consti{
+        width: 200px;
+    }
